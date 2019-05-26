@@ -58,9 +58,9 @@
     <!--logo及搜索框栏-->
     <div class="header-content">
         <span><img src="image/logo.png" alt=""></span>
-        <div>
+        <div class="input-group">
             <div class="nav-small a1">宝贝</div><div class="nav-small a2">店铺</div>
-            <input type="text" placeholder="目的地/酒店/景点/签证等"><div class="a3">搜索</div>
+            <input type="text" placeholder="目的地/酒店/景点/签证等"><button class="btn btn-primary a3">搜索</button>
         </div>
     </div>
     <!--导航条-->
@@ -296,26 +296,26 @@
     <!--侧边栏-->
     <aside>
         <div class="btn-group-vertical">
-            <a href=""><button>机票</button></a>
-            <a href=""><button>火车票</button></a>
-            <a href=""><button>酒店客栈</button></a>
+            <a href="#jp"><button>机票</button></a>
+            <a href="#hcp"><button>火车票</button></a>
+            <a href="#jdkz"><button>酒店客栈</button></a>
             <a href=""><button>旅游度假</button></a>
             <a href=""><button>门票</button></a>
             <a href=""><button>签证</button></a>
             <a href=""><button>旅行用车</button></a>
         </div>
         <!--右边上导航栏-->
-        <div id="form">
+        <div id="jp" class="r-form">
             <div class="first-form">
                 <ul>
-                    <li><a href="">国内城市</a></li>
-                    <li><a href="">国际城市/港澳台</a></li>
-                    <li><a href="">国内特价</a></li>
-                    <li><a href="">国际/港澳台特价</a></li>
+                    <li><a href="#gn">国内城市</a></li>
+                    <li><a href="#gj">国际城市/港澳台</a></li>
+                    <li><a href="#gnt">国内特价</a></li>
+                    <li><a href="#gjt">国际/港澳台特价</a></li>
                 </ul>
             </div>
         <!--右边下表单（国内城市）-->
-            <div class="second-form">
+            <div id="gn" class="second-form">
                 <table class="table-bordered">
                     <tr>
                         <td><input type="radio">&nbsp;单程&nbsp;&nbsp;&nbsp;<input type="radio">&nbsp;往返</td>
@@ -338,7 +338,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><img class="my-2" src="image/TB1NQ8jQlLoK1RjSZFuXXXn0XXa_184_36.png" alt=""></td>
+                        <td><img class="my-2" src="image/anxinpiao.png" alt=""></td>
                         <td><button class="btn btn-info">搜索</button></td>
                     </tr>
                     <tr>
@@ -356,7 +356,7 @@
                 </table>
             </div>
             <!--右边下表单（国际城市）-->
-            <div class="second-form">
+            <div id="gj" class="second-form">
                 <table class="table-bordered">
                     <tr>
                         <td colspan="2"><input type="radio">&nbsp;单程&nbsp;&nbsp;&nbsp;<input type="radio">&nbsp;往返
@@ -397,11 +397,10 @@
                 </table>
             </div>
             <!--右边下表单（国内特价）-->
-            <div class="second-form">
+            <div id="gnt" class="second-form">
                 <table class="table-bordered">
                     <tr>
-                        <td><input type="radio">&nbsp;单程&nbsp;&nbsp;&nbsp;<input type="radio">&nbsp;往返</td>
-                        <td><a class="btn-info" href="">我的订单/退票改签</a></td>
+                        <td colspan="2"><input type="radio">&nbsp;单程&nbsp;&nbsp;&nbsp;<input type="radio">&nbsp;往返</td>
                     </tr>
                     <tr>
                         <td>出发城市：<br>
@@ -412,37 +411,32 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>到达城市：<br>
+                        <td colspan="2">到达城市：<br>
                             <input type="text" class="form-control" placeholder="城市名">
-                        </td>
-                        <td>返程日期：<br>
-                            <input type="text" class="form-control" placeholder="yyyy-mm-dd">
                         </td>
                     </tr>
                     <tr>
-                        <td><img class="my-2" src="image/TB1NQ8jQlLoK1RjSZFuXXXn0XXa_184_36.png" alt=""></td>
+                        <td></td>
                         <td><button class="btn btn-info">搜索</button></td>
                     </tr>
                     <tr>
                         <td colspan="2">
                             <ul class="breadcrumb my-0 py-0">
+                                <li class="breadcrumb-item"><a href="">航协认证</a></li>
                                 <li class="breadcrumb-item"><a href="">出票保障</a></li>
-                                <li class="breadcrumb-item"><a href="">出行保障</a></li>
                                 <li class="breadcrumb-item"><a href="">标准退改签</a></li>
-                                <li class="breadcrumb-item"><a href="">一键退改</a></li>
-                                <li class="breadcrumb-item"><a href="">隐私保密</a></li>
-                                <li class="breadcrumb-item"><a href="">保险护航</a></li>
+                                <li class="breadcrumb-item"><a href="" class="btn-danger">一键退改</a></li>
                             </ul>
                         </td>
                     </tr>
                 </table>
             </div>
             <!--右边下表单（国际特价）-->
-            <div class="second-form">
+            <div id="gjt" class="second-form">
                 <table class="table-bordered">
                     <tr>
-                        <td><input type="radio">&nbsp;单程&nbsp;&nbsp;&nbsp;<input type="radio">&nbsp;往返</td>
-                        <td><a class="btn-info" href="">我的订单/退票改签</a></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>出发城市：<br>
@@ -453,26 +447,180 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>到达城市：<br>
+                        <td colspan="2">到达城市：<br>
                             <input type="text" class="form-control" placeholder="城市名">
-                        </td>
-                        <td>返程日期：<br>
-                            <input type="text" class="form-control" placeholder="yyyy-mm-dd">
                         </td>
                     </tr>
                     <tr>
-                        <td><img class="my-2" src="image/TB1NQ8jQlLoK1RjSZFuXXXn0XXa_184_36.png" alt=""></td>
+                        <td></td>
                         <td><button class="btn btn-info">搜索</button></td>
                     </tr>
                     <tr>
                         <td colspan="2">
                             <ul class="breadcrumb my-0 py-0">
+                                <li class="breadcrumb-item"><a href="">航协认证</a></li>
                                 <li class="breadcrumb-item"><a href="">出票保障</a></li>
-                                <li class="breadcrumb-item"><a href="">出行保障</a></li>
-                                <li class="breadcrumb-item"><a href="">标准退改签</a></li>
-                                <li class="breadcrumb-item"><a href="">一键退改</a></li>
-                                <li class="breadcrumb-item"><a href="">隐私保密</a></li>
-                                <li class="breadcrumb-item"><a href="">保险护航</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+            <!--火车票-->
+        <div id="hcp" class="r-form">
+            <div class="second-form">
+                <table class="table-bordered">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>出发城市：<br>
+                            <input type="text" class="form-control" placeholder="城市名">
+                        </td>
+                        <td>出发日期：<br>
+                            <input type="text" class="form-control" placeholder="yyyy-mm-dd">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">到达城市：<br>
+                            <input type="text" class="form-control" placeholder="城市名">
+                        </td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td></td>
+                        <td><button class="btn btn-info">搜索</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <ul class="breadcrumb my-0 py-0">
+                                <li class="breadcrumb-item"></li>
+                                <li class="breadcrumb-item"></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--酒店客栈-->
+        <div id="jdkz" class="r-form">
+            <div class="first-form">
+                <ul>
+                    <li><a href="#jd">酒店</a></li>
+                    <li><a href="#kz">客栈</a></li>
+                    <li><a href="#tg">团购</a></li>
+                </ul>
+            </div>
+        <!--右边下表单（酒店）-->
+            <div id="jd" class="second-form">
+                <table class="table-bordered">
+                    <tr>
+                        <td><input type="radio">&nbsp;国内/港澳台&nbsp;&nbsp;&nbsp;<input type="radio">&nbsp;海外</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>入住城市：<br>
+                            <input type="text" class="form-control" placeholder="城市名">
+                        </td>
+                        <td>关键字：<br>
+                            <input type="text" class="form-control" placeholder="输入酒店名、商圈、地标等">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>入住日期：<br>
+                            <input type="text" class="form-control" placeholder="yyyy-mm-dd">
+                        </td>
+                        <td>离店日期：<br>
+                            <input type="text" class="form-control" placeholder="yyyy-mm-dd">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img class="my-2" src="image/xinyz.png" alt=""></td>
+                        <td><button class="btn btn-info">搜索</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <ul class="breadcrumb my-0 py-0">
+                                <li class="breadcrumb-item"><a href="">快速确认</a></li>
+                                <li class="breadcrumb-item"><a href="">到店有房</a></li>
+                                <li class="breadcrumb-item"><a href="">资金安全</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--右边下表单（客栈）-->
+            <div id="kz" class="second-form">
+                <table class="table-bordered">
+                    <tr>
+                        <td colspan="2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>我想去：<br>
+                            <input type="text" class="form-control" placeholder="城市名">
+                        </td>
+                        <td>关键字：<br>
+                            <input type="text" class="form-control" placeholder="输入酒店名、商圈、地标等">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>入住日期：<br>
+                            <input type="text" class="form-control" placeholder="yyyy-mm-dd">
+                        </td>
+                        <td>离店日期：<br>
+                            <input type="text" class="form-control" placeholder="yyyy-mm-dd">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td><button class="btn btn-info">搜索</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <ul class="breadcrumb my-0 py-0">
+                                <li class="breadcrumb-item"><a href="">1小时快速确认</a></li>
+                                <li class="breadcrumb-item"><a href="">实价有房保障</a></li>
+                                <li class="breadcrumb-item"><a href="">如实描述保障</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--右边下表单（团购）-->
+            <div id="tg" class="second-form">
+                <table class="table-bordered">
+                    <tr>
+                    </tr>
+                    <tr>
+                        <td colspan="2">入住城市：<br>
+                            <input type="text" class="form-control" placeholder="城市名">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button class="btn btn-info">搜索</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>热门城市：
+                                <a href="">北京</a>
+                                <a href="">上海</a>
+                                <a href="">深圳</a>
+                                <a href="">成都</a>
+                                <a href="">重庆</a>
+                                <a href="">厦门</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <ul class="breadcrumb my-0 py-0">
+                                <li class="breadcrumb-item"><a href="">超值低价</a></li>
+                                <li class="breadcrumb-item"><a href="">实价房有保障</a></li>
+                                <li class="breadcrumb-item"><a href="">如实描述保障</a></li>
                             </ul>
                         </td>
                     </tr>
