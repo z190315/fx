@@ -2,6 +2,9 @@
     margin:0px;
     padding:0px;
 }
+body{
+    position: relative;
+}
 /*顶部导航条*/
 #top_nav{
     background:#f2f2f2;
@@ -269,4 +272,11 @@ table:target{
 }
 .neirong div tr td a span{
     color:red;
+}
+#a,#b{
+    position: absolute;
+    top:1105px;
+}
+#b{
+    top:1755px;
 }
