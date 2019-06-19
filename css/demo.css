@@ -26,7 +26,7 @@ a,div,.d1>a,.fb>a,.mb>a,.bb>a,.first-form>ul>li>a{
 div{
     float:left;
 }
-#top_nav .fb,.header-content,#ma,.btn-group-vertical,.neirong{
+#top_nav .fb,.header-content,#ma,.btn-group-vertical,.neirong,#main{
     margin-left: 13%;
 }
 #top_nav .mb{
@@ -273,10 +273,48 @@ table:target{
 .neirong div tr td a span{
     color:red;
 }
-#a,#b{
+#a,#b,#c,#d,#e,#main{
     position: absolute;
     top:1105px;
 }
 #b{
     top:1755px;
+}
+#c{
+    top:2406px;
+}
+#d{
+    top:3365px;
+}
+#e{
+    top:4008px;
+}
+/*航班轮播图*/
+#main{
+    width:45.5%;
+    height: 78px;
+    border:1px solid #e1e1e1;
+    top:4650px;
+    text-align: center;
+    line-height: 78px;
+}
+#main div{
+    float: left;
+}
+#ul-imgs>li{
+    float: left;
+    width: 94px;
+    height: 78px;
+    border:0.5px solid #e1e1e1;
+}
+#ul-imgs>li>a>img{
+    border-radius: 50% 50%;
+}
+.btn1{
+    width:27px;
+    height: 78px;
+    line-height: 78px;
+}
+.btn1>i{
+    color:D6D6D6;
 }

@@ -1,4 +1,4 @@
-/*左侧列表栏 */
+/*左侧列表栏 
 window.onmousedown=function(){
     var xb=document.getElementsByClassName("t-form");
     xb[0].style.display="block";
@@ -71,8 +71,8 @@ window.onmousedown=function(){
         xb[5].style.display="none";
         xb[6].style.display="block";
     }    
-}
-/*机票列表 */
+}*/
+/*机票列表 
 window.onload=function(){
     var xb=document.getElementsByClassName("second-form");
     xb[0].style.display="block";
@@ -125,4 +125,44 @@ window.onmousedown=function(){
         xa[1].style.display="none";
         xa[2].style.display="block";
     }
+}*/
+/*var i=0;
+var LIWIDTH=800;
+var DURATION=78;
+var LICOUNT=7;
+var ulImgs=document.getElementById("ul-imgs");
+function moveTo(to){
+    if (to==undefined) {
+        to=i+7;
+    }
+    if (i==0) {
+        if (to>i) {
+            ulImgs.className="transition";
+        } else {
+            ulImgs.className="";
+            ulImgs.style.marginLeft=-LIWIDTH*LICOUNT+"px";
+            setTimeout(function(){
+                moveTo(LICOUNT-7);
+            },100);
+            return; 
+        }
+    }
+    i=to;
+    ulImgs.style.marginLeft=-i*LIWIDTH+"px";
+    if(i==LICOUNT){
+        i=0;
+        setTimeout(function(){
+            ulImgs.className="";
+            ulImgs.style.marginLeft=0;
+        },DURATION)
+    }
+}
+var btnLeft=document.getElementById("btn-left");
+var btnRight=document.getElementById("btn-right");
+var canClick=true;
+btnRight.onclick=function(){
+    move(7)
+}
+btnLeft.onclick=function(){
+    move(-7);
 }*/
