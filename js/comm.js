@@ -1,5 +1,5 @@
-/*左侧列表栏 
-window.onmousedown=function(){
+/*左侧列表栏*/ 
+$(document).ready(function(){
     var xb=document.getElementsByClassName("t-form");
     xb[0].style.display="block";
     xb[1].style.display="none";
@@ -70,10 +70,10 @@ window.onmousedown=function(){
         xb[4].style.display="none";
         xb[5].style.display="none";
         xb[6].style.display="block";
-    }    
-}*/
-/*机票列表 
-window.onload=function(){
+    }   
+});
+/*机票列表*/
+$(document).ready(function(){
     var xb=document.getElementsByClassName("second-form");
     xb[0].style.display="block";
     xb[1].style.display="none";
@@ -103,7 +103,7 @@ window.onload=function(){
         xb[2].style.display="none";
         xb[3].style.display="block";
     }
-}
+});
 /*酒店客栈
 window.onmousedown=function(){
     var xa=document.getElementsByClassName("second-form");

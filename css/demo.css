@@ -266,14 +266,14 @@ table:target{
     border:1px solid #000;
     padding:0 0 0 6px;
 }
-.neirong div tr td a{
+.neirong div tr td a,.z>a{
     font-size: 14px;
     text-decoration: none;
 }
-.neirong div tr td a span{
+.neirong div tr td a span,.z span{
     color:red;
 }
-#a,#b,#c,#d,#e,#main{
+#a,#b,#c,#d,#e,#main,#f{
     position: absolute;
     top:1105px;
 }
@@ -289,16 +289,19 @@ table:target{
 #e{
     top:4008px;
 }
+#f{
+    top: 4732px;
+    width:74.5%;
+}
 /*航班轮播图*/
 #main{
-    width:45.5%;
     height: 78px;
     border:1px solid #e1e1e1;
     top:4650px;
     text-align: center;
     line-height: 78px;
 }
-#main div{
+#main>div>ul>li{
     float: left;
 }
 #ul-imgs>li{
@@ -315,6 +318,28 @@ table:target{
     height: 78px;
     line-height: 78px;
 }
-.btn1>i{
-    color:D6D6D6;
+#x{
+    width: 720px;
+}
+#f div i{
+    font-size: 18px;
+    color:rgb(46, 115, 145);
+}
+#f .y{
+    width:100%;
+    border: 1px solid red;
+    text-align: center;
+    height: 48px;
+    background-color: #FBFBFB;
+    line-height: 48px;
+}
+#f>.z{
+    width: 232px;
+    height: 228px;
+    text-align: center;
+}
+#f>.z>a>img{
+    width:228px;
+    height: 158px;
+    margin: 0 12px;   
 }
