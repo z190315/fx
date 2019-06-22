@@ -1,0 +1,36 @@
+
+#foot1 ul li{
+    list-style: none;
+    float: left;
+    font-size:12px;
+    margin:0 5px;
+    text-decoration: none;
+}
+#foot1{
+    float: left;
+    border-top:3px solid #51AED7;
+    width:70%;
+    margin:0;
+}
+#foot1 b{
+    font-size: 16px;
+}
+#foot1 div{
+    width:220px;
+    height: 83px;
+    padding-left: 25px;
+    margin:40px 5px 40px 0;
+}
+#foot1 div ul li a{
+    margin:0;
+}
+#foot1 .left{
+    border-left:0.5px solid rgb(240, 236, 236);
+}
+#foot1 div a{
+    float: left;
+}
+#foot2{
+    text-align: left;
+    width:100%;
+}
